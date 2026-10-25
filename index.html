@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PırılTrakya Tesis Yönetimi</title>
+
+  <!-- Tasarım ayrı dosyada: style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ÜST KISIM: solda logo, yanında menü ===== -->
+  <header class="header">
+    <div class="container header-ic">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="bilder/sirketlogosu.jpg" alt="PırılTrakya Tesis Yönetimi"
+          width="1024" height="687">
+      </a>
+
+      <!-- Telefonda görünen menü butonu (script.js ile çalışır) -->
+      <button id="menuButon" class="menu-buton" aria-label="Menüyü aç"
+        aria-expanded="false">☰</button>
+
+      <!-- Ana menü: yeni bir menü için bir li satırını kopyala -->
+      <nav id="anaMenu" class="menu">
+        <ul>
+          <!-- Alt menüsü olan menü -->
+          <li class="acilir">
+            <a href="#hizmetler">Hizmetler</a>
+            <ul class="alt-menu">
+              <li><a href="#ofis-temizligi">Bina ve ofis temizliği</a></li>
+              <li><a href="#cam-temizligi">Cam temizliği</a></li>
+              <li><a href="#tasinma-temizligi">Taşınma temizliği</a></li>
+              <li><a href="#bina-bakimi">Bina bakımı</a></li>
+              <li><a href="#bahce-bakimi">Bahçe bakımı</a></li>
+              <li><a href="#kis-hizmeti">Kış hizmeti</a></li>
+            </ul>
+          </li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <li><a href="#iletisim" class="menu-teklif">Teklif iste</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ===== GİRİŞ: başlık, kısa metin ve büyük fotoğraf ===== -->
+  <section class="giris">
+    <div class="container">
+      <h1>Temizlik ve bina hizmetleri</h1>
+      <p class="giris-metin">Ofisler, apartmanlar ve iş yerleri için temizlik,
+        bakım ve bahçe işleri.</p>
+      <p class="giris-metin">Taşınma ya da büyük bir temizlik mi
+        planlıyorsunuz? Teklif için bizi arayın veya e-posta gönderin.</p>
+      <a href="#iletisim" class="button">Teklif iste</a>
+
+      <!-- Büyük fotoğraf -->
+      <img src="bilder/01_buero-und-gebaeudereinigung.png"
+        alt="Ofiste zemini silen temizlik görevlisi" class="buyuk-resim"
+        width="1536" height="1024">
+    </div>
+  </section>
+
+  <!-- ===== HİZMETLER ===== -->
+  <!-- Yeni hizmet için bir "card" bloğunu kopyala, alt menüye de ekle -->
+  <section id="hizmetler" class="section">
+    <div class="container">
+      <h2>Hizmetlerimiz</h2>
+
+      <div class="cards">
+
+        <div class="card" id="ofis-temizligi">
+          <img src="bilder/01_buero-und-gebaeudereinigung.png"
+            alt="Ofiste zemini silen temizlik görevlisi"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Bina ve ofis temizliği</h3>
+            <p>Ofislerin, merdivenlerin ve ortak alanların düzenli
+              temizliği.</p>
+          </div>
+        </div>
+
+        <div class="card" id="cam-temizligi">
+          <img src="bilder/02_fensterreinigung.png"
+            alt="Büyük bir camı silen temizlik görevlisi"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Cam temizliği</h3>
+            <p>Pencerelerin, vitrinlerin ve cam cephelerin temizliği.</p>
+          </div>
+        </div>
+
+        <div class="card" id="tasinma-temizligi">
+          <img src="bilder/03_umzugsreinigung.png"
+            alt="Boş bir dairede mutfak tezgahını silen temizlik görevlisi"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Taşınma temizliği</h3>
+            <p>Taşınırken dairenin teslime hazır şekilde temizlenmesi.</p>
+          </div>
+        </div>
+
+        <div class="card" id="bina-bakimi">
+          <img src="bilder/04_hauswartung.png"
+            alt="Bina girişinde kapı kilidini tamir eden teknisyen"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Bina bakımı</h3>
+            <p>Kapıcılık, küçük tamirler ve teknik kontroller.</p>
+          </div>
+        </div>
+
+        <div class="card" id="bahce-bakimi">
+          <img src="bilder/05_gartenpflege.png"
+            alt="Çitleri budayan bahçıvan"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Bahçe bakımı</h3>
+            <p>Çim biçme, budama ve dış alanların bakımı.</p>
+          </div>
+        </div>
+
+        <div class="card" id="kis-hizmeti">
+          <img src="bilder/06_winterdienst.png"
+            alt="Bina önündeki yolda kar küreyen çalışan"
+            width="1536" height="1024">
+          <div class="card-metin">
+            <h3>Kış hizmeti</h3>
+            <p>Kar temizleme ve buzlanmaya karşı tuzlama.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HAKKIMIZDA (açık renkli arka plan) ===== -->
+  <section id="hakkimizda" class="section section-renkli">
+    <div class="container">
+      <h2>Hakkımızda</h2>
+      <p class="metin-dar">Ofislere, apartmanlara ve iş yerlerine temizlik ve
+        bina hizmetleri sunuyoruz. Temizlikten bahçe bakımına kadar bütün
+        işleri tek elden planlıyoruz.</p>
+    </div>
+  </section>
+
+  <!-- ===== İLETİŞİM: solda metin, sağda iletişim kutusu ===== -->
+  <section id="iletisim" class="section">
+    <div class="container iki-sutun">
+
+      <div>
+        <h2>İletişim</h2>
+        <p>Sorularınız veya teklif için bize telefonla ya da e-posta ile
+          ulaşabilirsiniz. Size kısa sürede geri dönüyoruz.</p>
+        <!-- İleride iletişim formu buraya eklenebilir -->
+      </div>
+
+      <div class="iletisim-kutu">
+        <h3>PırılTrakya Tesis Yönetimi</h3>
+        <p>Örnek Sokak 1<br>0000 Şehir</p>
+        <p>Telefon: <a href="tel:+41000000000">+41 00 000 00 00</a></p>
+        <p>E-posta:
+          <a href="mailto:info@ornek-facility.ch">info@ornek-facility.ch</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ALT BİLGİ: sütunlar ===== -->
+  <footer class="footer">
+    <div class="container footer-sutunlar">
+
+      <div class="footer-sutun">
+        <h4>PırılTrakya Tesis Yönetimi</h4>
+        <p>Örnek Sokak 1<br>0000 Şehir</p>
+      </div>
+
+      <div class="footer-sutun">
+        <h4>İletişim</h4>
+        <p>+41 00 000 00 00<br>info@ornek-facility.ch</p>
+      </div>
+
+      <div class="footer-sutun">
+        <h4>Menü</h4>
+        <ul>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-sutun">
+        <h4>Yasal</h4>
+        <ul>
+          <!-- Bu sayfalar ileride eklenecek (kişisel veriler için) -->
+          <li><a href="#">Gizlilik politikası</a></li>
+          <li><a href="#">Künye</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-alt">
+      © <span id="yil"></span> PırılTrakya Tesis Yönetimi
+    </div>
+  </footer>
+
+  <!-- ===== Yukarı çık butonu (script.js ile çalışır) ===== -->
+  <button id="yukariButon" class="yukari-buton"
+    aria-label="Yukarı çık">↑</button>
+
+  <!-- Fonksiyonlar ayrı dosyada: script.js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
